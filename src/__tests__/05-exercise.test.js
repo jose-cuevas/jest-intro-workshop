@@ -25,6 +25,7 @@ describe("05-exercises", () => {
      */
 
     // Write the assertion
+    expect(addItemToList(prevList, newItem)).toEqual([1,2,3,4,5])
   });
 
   test("addUser adds a new user to the list of users", () => {
@@ -46,6 +47,7 @@ describe("05-exercises", () => {
      */
 
     // Write the assertion
+    expect(addUser(users, expectedUser)).toEqual([{ name: "dani" }, { name: "ana" }, { name: "andrew" }, { name: "maria" }])
   });
 
   test("getWeekDays returns an array of week days", () => {
@@ -62,6 +64,7 @@ describe("05-exercises", () => {
      */
 
     // Write the assertion
+    expect(getWeekDays()).toMatchObject(expectedDays)
   });
 
   test("makeAdminUser returns an object with the role property", () => {
@@ -82,6 +85,7 @@ describe("05-exercises", () => {
      */
 
     // Write the assertion
+    expect(makeAdminUser(user)).toEqual({ name: "dani" }, { role: "ADMIN" })
   });
 
   test("getUserInfo returns an object without the address properties", () => {
@@ -107,5 +111,6 @@ describe("05-exercises", () => {
      */
 
     // Write the assertion
+    
   });
 });
