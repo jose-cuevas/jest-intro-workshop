@@ -52,6 +52,10 @@ describe("06-exercises", () => {
     return fetchUserOK(userID).then((data) =>{
       expect(data).toEqual(expectedUser)
     })
+
+    
+    });
+
   });
 
   /**
@@ -74,5 +78,9 @@ describe("06-exercises", () => {
 
     // Finish the test
     return expect(fetchUserFail(userID)).rejects.toEqual(expectedMessage)
+
+
   });
-});
+
+
+
